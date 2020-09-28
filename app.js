@@ -1,5 +1,4 @@
-const greeting = () => {
-  console.log("Hello Node");
-};
+require("./utils");
 
 greeting();
+add(3, 6);
