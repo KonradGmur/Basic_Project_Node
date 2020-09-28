@@ -1,4 +1,4 @@
-require("./utils");
+const greeting = require("./utils");
 
 greeting();
-add(3, 6);
+// add(3, 6);
