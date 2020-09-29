@@ -1,4 +1,4 @@
-const greeting = require("./utils");
+const utils = require("./utils");
 
-greeting();
-// add(3, 6);
+utils.greeting();
+utils.add(3, 6);
