@@ -1,15 +1,14 @@
-const http = require("http");
+const express = require("express");
 const port = 3000;
 
-const handler = (request, response) => {
-  console.log("New user!");
-  response.end("Hello User");
-};
-const server = http.createServer(handler);
+const app = express();
 
-server.listen(port, (err) => {
-  if (err) {
-    return console.log("Something was wrong");
-  }
-  console.log("server start");
+app.get("/", (req, res) => {
+  res.send("Hello Node");
 });
+
+app.get("/kontakt", (req, res) => {
+  res.send("To są dane kontaktowe");
+});
+
+app.listen(port);
