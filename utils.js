@@ -6,4 +6,7 @@ const add = (a, b) => {
   console.log(a + b);
 };
 
-module.exports = greeting;
+module.exports = {
+  greeting,
+  add,
+};
